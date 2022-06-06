@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pixel Canvas</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer type="module" src="canvas.js"></script>
+        
+    </head>
+    <body>
+        <div id="topBar">
+            <h1>PAINT  ART</h1>
+        </div>
+        <div id="bodyContainer">
+            <div id="leftBar">
+                <h2 style="margin: 20px">Colors</h2>
+                <div id="colorList">
+                    <button class="colorBtn" id="whiteBtn" style="background-color: white"></button>
+                    <button class="colorBtn" id="blackBtn" style="background-color: black;"></button>
+                    <button class="colorBtn" id="grayBtn" style="background-color:gray"></button>
+                    <button class="colorBtn" id="brownBtn" style="background-color:brown"></button>
+                    <button class="colorBtn" id="redBtn" style="background-color:red"></button>
+                    <button class="colorBtn" id="pinkBtn" style="background-color:pink"></button>
+                    <button class="colorBtn" id="orangeBtn" style="background-color:orange"></button>
+                    <button class="colorBtn" id="lightOrangeBtn" style="background-color:rgb(241, 191, 97)"></button>
+                    <button class="colorBtn" id="yellowBtn" style="background-color: yellow"></button>
+                    <button class="colorBtn" id="lightYellowBtn" style="background-color: lightyellow"></button>
+                    <button class="colorBtn" id="greenBtn" style="background-color: green"></button>
+                    <button class="colorBtn" id="lightGreenBtn" style="background-color: lightgreen"></button>
+                    <button class="colorBtn" id="blueBtn" style="background-color: blue"></button>
+                    <button class="colorBtn" id="lightBlueBtn" style="background-color: lightblue"></button>
+                    <button class="colorBtn" id="purpleBtn" style="background-color: purple"></button>
+                    <button class="colorBtn" id="lightPurpleBtn" style="background-color: rgb(255, 116, 255)"></button>
+                    <div class="colorBtn" id="selectColor">
+                
+                    </div>
+                </div>
+                <div id="rgbInputContainer" >
+                    <div class="rgbDiv" >
+                        <label for="redInput">R : </label>
+                        <input class="rgbInput" id="redInput" type="range" min="0" max="255"></inpuut>
+                    </div>
+                    <div class="rgbDiv" >
+                        <label for="greenInput">G : </label>
+                        <input class="rgbInput" id="greenInput" type="range" min="0" max="255"></inpuut>
+                    </div>
+                    <div class="rgbDiv" >
+                        <label for="blueInput">B : </label>
+                        <input class="rgbInput" id="blueInput" type="range" min="0" max="255"></inpuut>
+                    </div>
+                    <button id="rgbSumbit">Sumbit</button>
+                </div>
+            </div>
+            <div id="canvasContainer">
+                <div id="canvasInnerContainer">
+                    <canvas id="canvas1" class="canvas"></canvas>
+                </div>
+            </div>
+            <div id="rightBar">
+                <h2 style="margin: 20px">TOOLS</h2>
+                <div id="toolsList">
+                    <img src="pencil.png" class="tools" id="pencil" style="width: 80%;">
+                    <img src="eraser-icon-23413.png" class="tools" id="eraser" style="width: 80%;">
+                    <img src="square-png-25133.png"  class="tools" id="square"style="width:80%">
+                    <img src="circle-icon-16074.png"  class="tools" id="circle"style="width:80%">
+                    <div id="lineWidthContainer" >
+                        <p>LINE WIDTH:</p>
+                        <input id="lineWidthInput" type="range" min="1" max="50">
+                        <div style="background: white; height: 20px; text-align: center; color: black" >
+                            <p id="lineWidthValue"></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="bottomBar">
+
+        </div>
+        
+    </body>
+</html>
